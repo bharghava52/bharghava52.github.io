@@ -1,5 +1,5 @@
 body {
-    background-color: #2e6b8a;
+    background-image: radial-gradient(#2d6b8a, #374ba3);
 }
 
 .container {
@@ -9,7 +9,7 @@ body {
 img {
     width: -webkit-fill-available;
     height: -webkit-fill-available;
-    background-color: #2e6b8a;
+    background: transparent;
 }
 
 .contruction-content {
