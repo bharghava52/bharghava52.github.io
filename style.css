@@ -1,0 +1,18 @@
+body {
+    background-color: #2e6b8a;
+}
+
+.container {
+    max-width: inherit;
+}
+
+img {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background-color: #2e6b8a;
+}
+
+.contruction-content {
+    color: white;
+    font-size: 75px;
+}
