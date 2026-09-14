@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bharghava — Portfolio Design Mock</title>
+    <meta
+      name="description"
+      content="Design mock: Bharghava — Tech Lead building AI-native ERP platforms. Hyderabad."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      (function () {
+        var stored = localStorage.getItem("bharghava-theme");
+        if (stored === "light" || stored === "dark") {
+          document.documentElement.setAttribute("data-theme", stored);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="site">
+      <header class="nav" id="nav">
+        <a class="nav__mark" href="#top">Bharghava</a>
+        <div class="nav__right">
+          <nav aria-label="Primary">
+            <ul class="nav__links">
+              <li><a href="#work">Work</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <button
+            type="button"
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Theme: System. Click to change."
+          >
+            <span class="theme-toggle__icon theme-toggle__icon--system" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <rect x="3" y="4" width="18" height="12" rx="2" />
+                <path d="M8 20h8" />
+              </svg>
+            </span>
+            <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+              </svg>
+            </span>
+            <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z" />
+              </svg>
+            </span>
+            <span class="theme-toggle__label" id="theme-toggle-label">System</span>
+          </button>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero wrap" aria-labelledby="hero-name">
+          <p class="hero__eyebrow">Tech Lead · Hyderabad</p>
+          <h1 class="hero__name" id="hero-name">Bharghava</h1>
+          <p class="hero__headline">
+            I lead teams building AI-native platforms for mid-market ERP.
+          </p>
+          <p class="hero__sub">Full-stack · AWS · Scalable system architecture</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#work">See selected work</a>
+            <a class="btn btn--ghost" href="mailto:bhargavaraja12@gmail.com"
+              >Email me</a
+            >
+          </div>
+        </section>
+
+        <section class="section" id="work" aria-labelledby="work-title">
+          <div class="wrap">
+            <div class="section__head">
+              <span class="section__num">01 — work</span>
+              <h2 class="section__title" id="work-title">Things I ship.</h2>
+            </div>
+
+            <ul class="work-list">
+              <li class="work-item">
+                <p class="work-item__year">2023 — now</p>
+                <div class="work-item__body">
+                  <h3 class="work-item__title">IPT</h3>
+                  <p class="work-item__desc">
+                    Intelligent Process Testing — design, run, and report ERP
+                    process automation at scale. Split services for scenarios,
+                    execution, and reporting; BPMN-modeled flows; Cognito-secured
+                    multi-tenant projects on AWS.
+                  </p>
+                  <ul class="tags" aria-label="Technologies">
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>Angular</li>
+                    <li>BPMN</li>
+                    <li>AWS</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="work-item">
+                <p class="work-item__year">2023 — now</p>
+                <div class="work-item__body">
+                  <h3 class="work-item__title">LMS</h3>
+                  <p class="work-item__desc">
+                    Learning platform APIs for courses, modules, lessons, and
+                    learner progress — partner and client training with
+                    Cognito-secured access and PostgreSQL-backed progress
+                    tracking.
+                  </p>
+                  <ul class="tags" aria-label="Technologies">
+                    <li>Spring Boot</li>
+                    <li>PostgreSQL</li>
+                    <li>Cognito</li>
+                    <li>AWS</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="work-item">
+                <p class="work-item__year">2023 — now</p>
+                <div class="work-item__body">
+                  <h3 class="work-item__title">Unified Portal</h3>
+                  <p class="work-item__desc">
+                    One Angular shell for IPT workspace, requirements and gap
+                    analysis, and partner tooling — Cognito SSO with
+                    role-isolated portals and ERP-scoped AI flows in a single
+                    product surface.
+                  </p>
+                  <ul class="tags" aria-label="Technologies">
+                    <li>Angular 19</li>
+                    <li>PrimeNG</li>
+                    <li>Tailwind</li>
+                    <li>Cognito SSO</li>
+                    <li>bpmn-js</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section" id="experience" aria-labelledby="exp-title">
+          <div class="wrap">
+            <div class="section__head">
+              <span class="section__num">02 — experience</span>
+              <h2 class="section__title" id="exp-title">Where I’ve been.</h2>
+            </div>
+
+            <ol class="timeline">
+              <li class="timeline__item">
+                <p class="timeline__when">Nov 2023 — Present</p>
+                <div>
+                  <h3 class="timeline__role">Technical Lead</h3>
+                  <p class="timeline__org">INFOMIND.AI</p>
+                  <p class="timeline__note">
+                    Leading delivery on AI-driven ERP platforms — architecture,
+                    full-stack execution, and mentoring engineers across product
+                    surfaces used by partners and clients.
+                  </p>
+                </div>
+              </li>
+              <li class="timeline__item">
+                <p class="timeline__when">Aug 2022 — 2023</p>
+                <div>
+                  <h3 class="timeline__role">Senior Software Engineer</h3>
+                  <p class="timeline__org">Code Mantra</p>
+                  <p class="timeline__note">
+                    Owned features end-to-end in publishing-domain systems;
+                    raised reliability and delivery quality across the stack.
+                  </p>
+                </div>
+              </li>
+              <li class="timeline__item">
+                <p class="timeline__when">Aug 2020 — Aug 2022</p>
+                <div>
+                  <h3 class="timeline__role">Software Engineer</h3>
+                  <p class="timeline__org">Code Mantra</p>
+                  <p class="timeline__note">
+                    Built and maintained production services with a focus on
+                    clear APIs, maintainable Java services, and solid cloud
+                    fundamentals.
+                  </p>
+                </div>
+              </li>
+              <li class="timeline__item">
+                <p class="timeline__when">2018 — Aug 2020</p>
+                <div>
+                  <h3 class="timeline__role">Associate Software Engineer</h3>
+                  <p class="timeline__org">Code Mantra</p>
+                  <p class="timeline__note">
+                    Started in Chennai shipping core product work — foundation
+                    for full-stack and systems thinking.
+                  </p>
+                </div>
+              </li>
+            </ol>
+
+            <aside class="edu" aria-label="Education">
+              <p>
+                <strong>B.Tech, Computer Science</strong> — Kalasalingam
+                University
+              </p>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section" id="about" aria-labelledby="about-title">
+          <div class="wrap">
+            <div class="section__head">
+              <span class="section__num">03 — about</span>
+              <h2 class="section__title" id="about-title">A bit more.</h2>
+            </div>
+            <p class="about-copy">
+              I’m a tech lead based in <strong>Hyderabad</strong>. I care about
+              systems that stay understandable as they scale — clear service
+              boundaries, honest APIs, and AI features that earn their place in
+              the product. Day to day that means shaping architecture, unblocking
+              engineers, and shipping platforms that partners and clients
+              actually use.
+            </p>
+            <span class="draft-note">Draft copy — edit freely</span>
+          </div>
+        </section>
+
+        <section class="section" id="contact" aria-labelledby="contact-title">
+          <div class="wrap">
+            <div class="section__head">
+              <span class="section__num">04 — contact</span>
+              <h2 class="section__title" id="contact-title">Say hello.</h2>
+            </div>
+
+            <div class="contact-grid">
+              <a
+                class="contact-link"
+                href="mailto:bhargavaraja12@gmail.com"
+              >
+                <span class="contact-link__label">Email</span>
+                <span class="contact-link__value"
+                  >bhargavaraja12@gmail.com</span
+                >
+              </a>
+              <a
+                class="contact-link"
+                href="https://www.linkedin.com/in/bharghava-b/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="contact-link__label">LinkedIn</span>
+                <span class="contact-link__value"
+                  >linkedin.com/in/bharghava-b</span
+                >
+              </a>
+              <a
+                class="contact-link"
+                href="https://github.com/bharghava52"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="contact-link__label">GitHub</span>
+                <span class="contact-link__value">github.com/bharghava52</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="wrap">
+          <span>© <span id="year"></span> Bharghava</span>
+          <span>Design mock · not production</span>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const nav = document.getElementById("nav");
+      const onScroll = () => {
+        nav.classList.toggle("is-scrolled", window.scrollY > 12);
+      };
+      onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
+
+      const THEME_KEY = "bharghava-theme";
+      const THEME_ORDER = ["system", "light", "dark"];
+      const themeToggle = document.getElementById("theme-toggle");
+      const themeLabel = document.getElementById("theme-toggle-label");
+
+      function currentTheme() {
+        const attr = document.documentElement.getAttribute("data-theme");
+        if (attr === "light" || attr === "dark") return attr;
+        return "system";
+      }
+
+      function applyTheme(theme) {
+        if (theme === "light" || theme === "dark") {
+          document.documentElement.setAttribute("data-theme", theme);
+          localStorage.setItem(THEME_KEY, theme);
+        } else {
+          document.documentElement.removeAttribute("data-theme");
+          localStorage.removeItem(THEME_KEY);
+          theme = "system";
+        }
+        const label = theme.charAt(0).toUpperCase() + theme.slice(1);
+        themeLabel.textContent = label;
+        themeToggle.setAttribute(
+          "aria-label",
+          "Theme: " + label + ". Click to change."
+        );
+      }
+
+      applyTheme(currentTheme());
+
+      themeToggle.addEventListener("click", () => {
+        const index = THEME_ORDER.indexOf(currentTheme());
+        const next = THEME_ORDER[(index + 1) % THEME_ORDER.length];
+        applyTheme(next);
+      });
+    </script>
+  </body>
+</html>
